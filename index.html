@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Stage-tn</title>
+</head>
+<body>
+    <nav class="bg-slate-900 px-2 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="images/test.png" alt="stage-tn-logo" width="350px">
+          
+            <button id="mobile-btn" class="md:hidden">
+                <i class="ri-menu-4-line text-white text-3xl"></i>
+            </button>
+            <div class="md:hiiden">
+                <div id="mobile-menu" class="absolute flex hidden flex-col  space-y-2 left-6 right-6 items-center mt-10 bg-gray-100 rounded-lg drop-shadow-lg border-gray-300">
+                    <a href="#" class="  hover:text-white">Portfolio</a>
+                    <a href="#" class="font-bold  hover:text-white">About</a>
+                    <a href="#" class="font-bold  hover:text-white">Contact</a>
+                    <a href="#" class="font-bold  hover:text-white">Social</a>
+                    <a href="#" class="font-bold py-2 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-900 hover:border-double hover:border-4 hover:border-orange-500">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="hero" class="py-8 md:py-16">
+        <div class="container mx-auto flex flex-col-reverse space-y-6 md:flex-row">
+            <div class="md:w-1/2 flex flex-col space-y-5 py-8 text-center md:text-left">
+                <h1 class="font-bold text-3xl md:text-5xl">Speech-to-Text Solution</h1>
+                <p>A speech-to-text solution is a technology that converts spoken language into written text. It typically involves the use of algorithms and machine learning to analyze audio recordings and accurately transcribe them into textual form.</p>
+                <a href="#" id="microphoneBtn" class="py-2 px-6 rounded-full self-center md:self-start text-white bg-orange-500 hover:bg-slate-900 hover:border-double hover:border-4 hover:border-orange-500">
+                    <i class="fas fa-microphone-alt"></i> <!-- Microphone icon -->
+                </a>
+                <div class="flex items-center mt-4">
+                    <button id="copyButton" class="mr-2 focus:outline-none">
+                        <i class="far fa-copy"></i>
+                    </button>
+                    <textarea id="myTextArea" class="w-full h-24 border border-gray-300 rounded-md resize-none"></textarea>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center items-center">
+                <img src="images/speech.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section id="author" class="mb-8">
+        <div class="container mx-auto flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+        </div>
+    </section>
+    <footer class="bg-slate-900 py-8">
+        <div class="container mx-auto text-white px-6 md:flex-row px-5 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex flex-col items-center">
+                <img src="images/test test2.png" alt="" class="h-24">
+                <div class="flex space-x-10 mt-4">
+                    <a href="#" class="text-3xl"><i class="ri-facebook-box-fill text-3xl"></i></a>
+                    <a href="#" class="text-3xl"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+                    <a href="#" class="text-3xl"><i class="ri-github-fill text-3xl"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between md:space-x-20 mt-4 md:mt-0">
+                <!-- Your footer links -->
+            </div>
+            <div class="flex flex-col mt-4 md:mt-0">
+                <form action="">
+                    <input type="text" placeholder="Subscribe now" class="flex-1 py-2 px-6 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-slate-900">
+                    <button class="bg-orange-500 rounded-full py-2 px-6 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">Subscribe</button>
+                </form>
+                <div class="mt-5 md:block">
+                    Copyright &copy; 2024, all rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/franc/2.0.2/franc.min.js"></script>
+
+</body>
+</html>
